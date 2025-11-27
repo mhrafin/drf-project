@@ -1,21 +1,29 @@
 from rest_framework import serializers
 
-from watchlist_app.models import StreamPlatform, WatchList
+from watchlist_app.models import Review, StreamPlatform, WatchList
 
 
-class StreamPlatformSerializer(serializers.ModelSerializer):
+class ReviewSerializer(serializers.ModelSerializer):
     class Meta:
-        model = StreamPlatform
-        fields = "__all__"
+        model = Review
+        # fields = "__all__"
+        exclude = "watchlist",
 
 
 class WatchListSerializer(serializers.ModelSerializer):
-    # len_name = serializers.SerializerMethodField()
-
+    review_set = ReviewSerializer(many=True, read_only=True)
     class Meta:
         model = WatchList
         fields = "__all__"
         # exclude = ["active"]
+
+
+class StreamPlatformSerializer(serializers.ModelSerializer):
+    watchlist_set = WatchListSerializer(many=True, read_only=True)
+
+    class Meta:
+        model = StreamPlatform
+        fields = "__all__"
 
     # def get_len_name(self, object):
     #     length = len(object.name)
@@ -26,7 +34,7 @@ class WatchListSerializer(serializers.ModelSerializer):
     #         raise serializers.ValidationError("Title and Description should be different!")
     #     else:
     #         return data
-        
+
     # def validate_name(self, value):
     #     if len(value) < 2:
     #         raise serializers.ValidationError("Name is too short!")

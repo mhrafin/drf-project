@@ -4,7 +4,7 @@ from watchlist_app.api.views import *
 urlpatterns = [
     # path('list/', movie_list, name="movie-list"),
     # path('<int:pk>', movie_detail, name="movie-detail")
-    path("", WatchListAll.as_view(), name="watch-list"),
+    path("list/", WatchListAll.as_view(), name="watch-list"),
     path("<int:pk>", WatchListDetail.as_view(), name="watch-list-detail"),
     path(
         "stream-platform/",
@@ -16,5 +16,9 @@ urlpatterns = [
         StreamPlatformDetail.as_view(),
         name="stream-platform-detail",
     ),
-    # path('stream-platform/<int:pk>')
+    # path("review-list/", ReviewList.as_view(), name="review-list"),
+    # path("review/<int:pk>", ReviewDetail.as_view(), name="review-detail"),
+    path("<int:pk>/review-list/", ReviewList.as_view(), name="review-list"),
+    path("<int:pk>/review-create/", ReviewCreate.as_view(), name="review-create"),
+    path("review/<int:pk>/", ReviewDetail.as_view(), name="review-detail"),
 ]
