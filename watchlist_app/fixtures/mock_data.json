@@ -1,0 +1,29 @@
+[
+{
+  "model": "watchlist_app.streamplatform",
+  "pk": 4,
+  "fields": {
+    "name": "Netflix",
+    "about": "About Netflix",
+    "website": "https://www.example.com/netflix"
+  }
+},
+{
+  "model": "watchlist_app.streamplatform",
+  "pk": 5,
+  "fields": {
+    "name": "Amazon Prime",
+    "about": "About Amazon Prime",
+    "website": "https://www.example.com/amazon prime"
+  }
+},
+{
+  "model": "watchlist_app.streamplatform",
+  "pk": 6,
+  "fields": {
+    "name": "Disney+",
+    "about": "About Disney+",
+    "website": "https://www.example.com/disney+"
+  }
+}
+]

@@ -10,7 +10,7 @@ class StreamPlatform(models.Model):
         return self.name
 
 class WatchList(models.Model):
-    title = models.IntegerField()
+    title = models.CharField(max_length=50)
     storyline = models.TextField(max_length=200)
     platform = models.ForeignKey(StreamPlatform, on_delete=models.CASCADE, null=True)
     active = models.BooleanField(default=True)

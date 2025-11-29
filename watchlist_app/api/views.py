@@ -5,7 +5,7 @@ from rest_framework import status
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import mixins, generics
-
+from rest_framework import viewsets
 
 from watchlist_app.api.serializers import (
     ReviewSerializer,
@@ -39,68 +39,54 @@ class ReviewDetail(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = ReviewSerializer
 
 
-# class ReviewDetail(
-#     mixins.RetrieveModelMixin, generics.GenericAPIView
-# ):
-#     queryset = Review.objects.all()
-#     serializer_class = ReviewSerializer
-
-#     def get(self, request, *args, **kwargs):
-#         return self.retrieve(request, *args, **kwargs)
-
-# class ReviewList(
-#     mixins.ListModelMixin, mixins.CreateModelMixin, generics.GenericAPIView
-# ):
-#     queryset = Review.objects.all()
-#     serializer_class = ReviewSerializer
-
-#     def get(self, request, *args, **kwargs):
-#         return self.list(request, *args, **kwargs)
-
-#     def post(self, request, *args, **kwargs):
-#         return self.create(request, *args, **kwargs)
+class StreamPlatformViewSet(viewsets.ModelViewSet):
+    queryset = StreamPlatform.objects.prefetch_related("watchlist_set").all()    
+    serializer_class = StreamPlatformSerializer
+        
 
 
-class StreamPlatformList(APIView):
-    def get(self, request):
-        stream_platforms = StreamPlatform.objects.all()
-        serializer = StreamPlatformSerializer(stream_platforms, many=True)
-        return Response(serializer.data)
+# class StreamPlatformList(APIView):
+#     def get(self, request):
+#         stream_platforms = StreamPlatform.objects.all()
+#         serializer = StreamPlatformSerializer(stream_platforms, many=True)
+#         return Response(serializer.data)
 
-    def post(self, request):
-        serializer = StreamPlatformSerializer(data=request.data)
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data)
-        else:
-            return Response(serializer.errors)
+#     def post(self, request):
+#         serializer = StreamPlatformSerializer(data=request.data)
+#         if serializer.is_valid():
+#             serializer.save()
+#             return Response(serializer.data)
+#         else:
+#             return Response(serializer.errors)
 
 
-class StreamPlatformDetail(APIView):
-    def get_object(self, pk):
-        return get_object_or_404(StreamPlatform, pk=pk)
+# class StreamPlatformDetail(APIView):
+#     def get_object(self, pk):
+#         return get_object_or_404(StreamPlatform, pk=pk)
 
-    def get(self, request, pk):
-        stream_platform = self.get_object(pk)
-        serializer = StreamPlatformSerializer(stream_platform)
-        return Response(serializer.data)
+#     def get(self, request, pk):
+#         stream_platform = self.get_object(pk)
+#         serializer = StreamPlatformSerializer(stream_platform)
+#         return Response(serializer.data)
 
-    def put(self, request, pk):
-        stream_platform = self.get_object(pk)
-        serializer = StreamPlatformSerializer(stream_platform, data=request.data)
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data)
-        else:
-            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+#     def put(self, request, pk):
+#         stream_platform = self.get_object(pk)
+#         serializer = StreamPlatformSerializer(stream_platform, data=request.data)
+#         if serializer.is_valid():
+#             serializer.save()
+#             return Response(serializer.data)
+#         else:
+#             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-    def delete(self, pk):
-        stream_platform = self.get_object(pk)
-        stream_platform.delete()
-        return Response(status=status.HTTP_204_NO_CONTENT)
+#     def delete(self, pk):
+#         stream_platform = self.get_object(pk)
+#         stream_platform.delete()
+#         return Response(status=status.HTTP_204_NO_CONTENT)
 
 
 class WatchListAll(APIView):
+    serializer_class = WatchListSerializer
+
     def get(self, request):
         movies = WatchList.objects.all()
         serializer = WatchListSerializer(movies, many=True)
@@ -116,6 +102,8 @@ class WatchListAll(APIView):
 
 
 class WatchListDetail(APIView):
+    serializer_class = WatchListSerializer
+
     def get(self, request, pk):
         try:
             movie = WatchList.objects.get(pk=pk)
