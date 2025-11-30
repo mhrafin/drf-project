@@ -25,5 +25,29 @@
     "about": "About Disney+",
     "website": "https://www.example.com/disney+"
   }
+},
+{
+  "model": "watchlist_app.watchlist",
+  "pk": 1,
+  "fields": {
+    "title": "Dispatch",
+    "storyline": "Dispatch",
+    "platform": 4,
+    "active": true,
+    "created": "2025-11-30T01:45:24.999Z"
+  }
+},
+{
+  "model": "watchlist_app.review",
+  "pk": 1,
+  "fields": {
+    "review_user": 1,
+    "rating": 4,
+    "description": "WOW",
+    "watchlist": 1,
+    "active": true,
+    "created": "2025-11-30T01:45:35.618Z",
+    "update": "2025-11-30T01:45:35.618Z"
+  }
 }
 ]
