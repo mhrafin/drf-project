@@ -1,3 +1,4 @@
+from rest_framework.exceptions import ValidationError
 from django.shortcuts import get_object_or_404
 from rest_framework import status
 
@@ -7,6 +8,7 @@ from rest_framework.response import Response
 from rest_framework import mixins, generics
 from rest_framework import viewsets
 
+from watchlist_app.api.permissions import IsAdminOrReadOnly, ReviewOwnerOrReadOnly
 from watchlist_app.api.serializers import (
     ReviewSerializer,
     StreamPlatformSerializer,
@@ -17,12 +19,19 @@ from watchlist_app.models import Review, StreamPlatform, WatchList
 
 class ReviewCreate(generics.CreateAPIView):
     serializer_class = ReviewSerializer
+    def get_queryset(self):
+        return Review.objects.all
 
     def perform_create(self, serializer):
         pk = self.kwargs.get("pk")
-        watchlist = WatchList.objects.get(pk=pk)
+        queryset = WatchList.objects.get(pk=pk)
 
-        serializer.save(watchlist=watchlist)
+        user = self.request.user
+
+        if Review.objects.filter(watchlist=queryset, review_user=user).exists():
+            raise ValidationError("You already reviewed this watch!", code=status.HTTP_403_FORBIDDEN)
+
+        serializer.save(watchlist=queryset, review_user=user)
 
 
 class ReviewList(generics.ListAPIView):
@@ -37,6 +46,7 @@ class ReviewList(generics.ListAPIView):
 class ReviewDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Review.objects.all()
     serializer_class = ReviewSerializer
+    permission_classes = [ReviewOwnerOrReadOnly]
 
 
 class StreamPlatformViewSet(viewsets.ModelViewSet):
