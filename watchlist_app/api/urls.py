@@ -9,7 +9,7 @@ urlpatterns = [
     # path('list/', movie_list, name="movie-list"),
     # path('<int:pk>', movie_detail, name="movie-detail")
     path("list/", WatchListAll.as_view(), name="watch-list"),
-    path("<int:pk>", WatchListDetail.as_view(), name="watch-list-detail"),
+    path("<int:pk>/", WatchListDetail.as_view(), name="watch-list-detail"),
     # path(
     #     "stream-platform/",
     #     StreamPlatformList.as_view(),

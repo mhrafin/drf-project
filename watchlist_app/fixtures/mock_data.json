@@ -39,6 +39,123 @@
   }
 },
 {
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2025-12-01T05:37:04.409Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Steam",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2025-12-01T05:37:25.818Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "age of empire 4",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2025-12-01T05:37:44.206Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "age of empire 4 - 4",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2025-12-01T05:39:45.076Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "Batman",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2025-12-01T05:40:11.594Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "4",
+    "object_repr": "Batman - 5",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2025-12-01T05:41:32.649Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "4",
+    "object_repr": "Batman - 5",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2025-12-01T08:24:07.185Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "cdd38498b8ec8215b5fb007491cfe5cfcbb950a9",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2025-12-01T08:44:59.716Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "692dc9f3b9b65ebcff6d055c0b1d9a1d56eb1160",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2025-12-01T08:59:57.561Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "cdd38498b8ec8215b5fb007491cfe5cfcbb950a9",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
   "model": "auth.permission",
   "pk": 1,
   "fields": {
@@ -363,11 +480,83 @@
   }
 },
 {
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add Token",
+    "content_type": 10,
+    "codename": "add_token"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change Token",
+    "content_type": 10,
+    "codename": "change_token"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete Token",
+    "content_type": 10,
+    "codename": "delete_token"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view Token",
+    "content_type": 10,
+    "codename": "view_token"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add Token",
+    "content_type": 11,
+    "codename": "add_tokenproxy"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change Token",
+    "content_type": 11,
+    "codename": "change_tokenproxy"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete Token",
+    "content_type": 11,
+    "codename": "delete_tokenproxy"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view Token",
+    "content_type": 11,
+    "codename": "view_tokenproxy"
+  }
+},
+{
   "model": "auth.user",
   "pk": 1,
   "fields": {
     "password": "pbkdf2_sha256$1000000$s6fIzCyRQF8vtFUWH5Urae$TsHYj5kWWHSrOhaCPP1OvpQKmC7+7TiujoFp180gQrc=",
-    "last_login": "2025-11-30T11:04:32.009Z",
+    "last_login": "2025-12-01T07:24:08.939Z",
     "is_superuser": true,
     "username": "admin",
     "first_name": "",
@@ -385,7 +574,7 @@
   "pk": 2,
   "fields": {
     "password": "pbkdf2_sha256$1000000$A1JnwwalNs1PRWQ7tzyK9P$0mgp2AeuH20Ota2XlumrP888SEJOiemxggXy7RdaozM=",
-    "last_login": "2025-11-30T11:03:50.007Z",
+    "last_login": "2025-12-01T05:47:06.011Z",
     "is_superuser": false,
     "username": "raf",
     "first_name": "",
@@ -399,12 +588,37 @@
   }
 },
 {
+  "model": "authtoken.token",
+  "pk": "6275559f75c9987957d8eaaec8b75b82561f84d5",
+  "fields": {
+    "user": 1,
+    "created": "2025-12-01T09:00:02.120Z"
+  }
+},
+{
+  "model": "authtoken.token",
+  "pk": "692dc9f3b9b65ebcff6d055c0b1d9a1d56eb1160",
+  "fields": {
+    "user": 2,
+    "created": "2025-12-01T08:44:59.715Z"
+  }
+},
+{
   "model": "watchlist_app.streamplatform",
   "pk": 1,
   "fields": {
     "name": "Netflix",
     "about": "Netflix",
     "website": "http://www.Netflix.com"
+  }
+},
+{
+  "model": "watchlist_app.streamplatform",
+  "pk": 2,
+  "fields": {
+    "name": "Steam",
+    "about": "Steam",
+    "website": "http://www.Steam.com"
   }
 },
 {
@@ -415,7 +629,35 @@
     "storyline": "Dispatch",
     "platform": 1,
     "active": true,
-    "created": "2025-11-30T06:05:16.908Z"
+    "created": "2025-11-30T06:05:16.908Z",
+    "avg_rating": 0.0,
+    "num_rating": 0
+  }
+},
+{
+  "model": "watchlist_app.watchlist",
+  "pk": 2,
+  "fields": {
+    "title": "age of empire 4",
+    "storyline": "Good RTS game.",
+    "platform": 2,
+    "active": true,
+    "created": "2025-12-01T05:37:25.817Z",
+    "avg_rating": 0.0,
+    "num_rating": 0
+  }
+},
+{
+  "model": "watchlist_app.watchlist",
+  "pk": 3,
+  "fields": {
+    "title": "Batman",
+    "storyline": "Batman",
+    "platform": 1,
+    "active": true,
+    "created": "2025-12-01T05:39:45.075Z",
+    "avg_rating": 4.5,
+    "num_rating": 2
   }
 },
 {
@@ -442,6 +684,45 @@
     "active": false,
     "created": "2025-11-30T11:04:07.106Z",
     "update": "2025-11-30T11:04:07.106Z"
+  }
+},
+{
+  "model": "watchlist_app.review",
+  "pk": 3,
+  "fields": {
+    "review_user": 2,
+    "rating": 4,
+    "description": "Love it",
+    "watchlist": 2,
+    "active": true,
+    "created": "2025-12-01T05:37:44.206Z",
+    "update": "2025-12-01T05:37:44.206Z"
+  }
+},
+{
+  "model": "watchlist_app.review",
+  "pk": 5,
+  "fields": {
+    "review_user": 1,
+    "rating": 5,
+    "description": "Im batman",
+    "watchlist": 3,
+    "active": false,
+    "created": "2025-12-01T05:46:21.324Z",
+    "update": "2025-12-01T05:46:21.324Z"
+  }
+},
+{
+  "model": "watchlist_app.review",
+  "pk": 6,
+  "fields": {
+    "review_user": 2,
+    "rating": 4,
+    "description": "Nah Im Batman 2",
+    "watchlist": 3,
+    "active": false,
+    "created": "2025-12-01T05:47:23.420Z",
+    "update": "2025-12-01T08:45:12.320Z"
   }
 }
 ]
