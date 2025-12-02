@@ -574,7 +574,7 @@
   "pk": 2,
   "fields": {
     "password": "pbkdf2_sha256$1000000$A1JnwwalNs1PRWQ7tzyK9P$0mgp2AeuH20Ota2XlumrP888SEJOiemxggXy7RdaozM=",
-    "last_login": "2025-12-01T05:47:06.011Z",
+    "last_login": "2025-12-02T01:16:44.995Z",
     "is_superuser": false,
     "username": "raf",
     "first_name": "",
@@ -619,6 +619,33 @@
     "name": "Steam",
     "about": "Steam",
     "website": "http://www.Steam.com"
+  }
+},
+{
+  "model": "watchlist_app.streamplatform",
+  "pk": 4,
+  "fields": {
+    "name": "Netflix",
+    "about": "About Netflix",
+    "website": "https://www.example.com/netflix"
+  }
+},
+{
+  "model": "watchlist_app.streamplatform",
+  "pk": 5,
+  "fields": {
+    "name": "Amazon Prime",
+    "about": "About Amazon Prime",
+    "website": "https://www.example.com/amazon prime"
+  }
+},
+{
+  "model": "watchlist_app.streamplatform",
+  "pk": 6,
+  "fields": {
+    "name": "Disney+",
+    "about": "About Disney+",
+    "website": "https://www.example.com/disney+"
   }
 },
 {
