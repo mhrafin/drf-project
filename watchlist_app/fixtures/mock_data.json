@@ -715,22 +715,6 @@
   }
 },
 {
-  "model": "authtoken.token",
-  "pk": "6e55adc57dc981b833dd1b1a2d04e760a0d4ad8c",
-  "fields": {
-    "user": 7,
-    "created": "2025-12-03T13:30:29.618Z"
-  }
-},
-{
-  "model": "authtoken.token",
-  "pk": "c9b9bf6cdc131d1d3a089fa12f59d5d8260fc426",
-  "fields": {
-    "user": 8,
-    "created": "2025-12-03T13:30:56.041Z"
-  }
-},
-{
   "model": "watchlist_app.streamplatform",
   "pk": 1,
   "fields": {
