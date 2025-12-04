@@ -5,6 +5,7 @@ MANAGE = $(PYTHON) manage.py
 
 server:
 	$(MANAGE) migrate
+	$(MANAGE) flush --no-input
 	$(MANAGE) loaddata mock_data
 	$(MANAGE) runserver
 
@@ -13,4 +14,4 @@ refresh-db:
 	$(MANAGE) loaddata mock_data
 
 save-db:
-	$(MANAGE) dumpdata --exclude contenttypes --exclude sessions --indent 2 > watchlist_app/fixtures/mock_data.json
+	$(MANAGE) dumpdata --exclude contenttypes --exclude sessions --indent 2 > fixtures/mock_data.json
