@@ -6,12 +6,12 @@ MANAGE = $(PYTHON) manage.py
 server:
 	$(MANAGE) migrate
 	$(MANAGE) flush --no-input
-	$(MANAGE) loaddata mock_data
+	$(MANAGE) loaddata fixtures/mock_data.json
 	$(MANAGE) runserver
 
 refresh-db:
 	$(MANAGE) flush --no-input
-	$(MANAGE) loaddata mock_data
+	$(MANAGE) loaddata fixtures/mock_data.json
 
 save-db:
 	mkdir -p fixtures
