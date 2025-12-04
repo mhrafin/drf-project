@@ -1,0 +1,866 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2025-11-30T06:05:06.614Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Netflix",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2025-11-30T06:05:16.908Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Dispatch",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2025-11-30T06:36:24.466Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "2",
+    "object_repr": "raf",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2025-12-01T05:37:04.409Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Steam",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2025-12-01T05:37:25.818Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "age of empire 4",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2025-12-01T05:37:44.206Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "age of empire 4 - 4",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2025-12-01T05:39:45.076Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "Batman",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2025-12-01T05:40:11.594Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "4",
+    "object_repr": "Batman - 5",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2025-12-01T05:41:32.649Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "4",
+    "object_repr": "Batman - 5",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2025-12-01T08:24:07.185Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "cdd38498b8ec8215b5fb007491cfe5cfcbb950a9",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2025-12-01T08:44:59.716Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "692dc9f3b9b65ebcff6d055c0b1d9a1d56eb1160",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2025-12-01T08:59:57.561Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "cdd38498b8ec8215b5fb007491cfe5cfcbb950a9",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2025-12-03T12:55:22.171Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "3",
+    "object_repr": "yeasin3",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add stream platform",
+    "content_type": 7,
+    "codename": "add_streamplatform"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change stream platform",
+    "content_type": 7,
+    "codename": "change_streamplatform"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete stream platform",
+    "content_type": 7,
+    "codename": "delete_streamplatform"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view stream platform",
+    "content_type": 7,
+    "codename": "view_streamplatform"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add watch list",
+    "content_type": 8,
+    "codename": "add_watchlist"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change watch list",
+    "content_type": 8,
+    "codename": "change_watchlist"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete watch list",
+    "content_type": 8,
+    "codename": "delete_watchlist"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view watch list",
+    "content_type": 8,
+    "codename": "view_watchlist"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add review",
+    "content_type": 9,
+    "codename": "add_review"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change review",
+    "content_type": 9,
+    "codename": "change_review"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete review",
+    "content_type": 9,
+    "codename": "delete_review"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view review",
+    "content_type": 9,
+    "codename": "view_review"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add Token",
+    "content_type": 10,
+    "codename": "add_token"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change Token",
+    "content_type": 10,
+    "codename": "change_token"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete Token",
+    "content_type": 10,
+    "codename": "delete_token"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view Token",
+    "content_type": 10,
+    "codename": "view_token"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add Token",
+    "content_type": 11,
+    "codename": "add_tokenproxy"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change Token",
+    "content_type": 11,
+    "codename": "change_tokenproxy"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete Token",
+    "content_type": 11,
+    "codename": "delete_tokenproxy"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view Token",
+    "content_type": 11,
+    "codename": "view_tokenproxy"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$s6fIzCyRQF8vtFUWH5Urae$TsHYj5kWWHSrOhaCPP1OvpQKmC7+7TiujoFp180gQrc=",
+    "last_login": "2025-12-03T12:55:08.036Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-11-30T06:03:19.543Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$A1JnwwalNs1PRWQ7tzyK9P$0mgp2AeuH20Ota2XlumrP888SEJOiemxggXy7RdaozM=",
+    "last_login": "2025-12-02T01:16:44.995Z",
+    "is_superuser": false,
+    "username": "raf",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-11-30T06:36:24.246Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$0xuZksVdZWqcIKKu1nmVId$6XhBnj0ZTmANhEyHkThip4cN/1uKg6efzvd4NX8gdjE=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "yeasin3",
+    "first_name": "",
+    "last_name": "",
+    "email": "yeasin3@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-12-03T12:55:25.448Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 5,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$u6ep82Ganc3lL840NWRb3p$G4Oe0NoXAgqtvzVqfZCscRRpKJPMS20giWJ9BeCmsss=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "yeasin4",
+    "first_name": "",
+    "last_name": "",
+    "email": "yeasin4@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-12-03T12:57:49.953Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 6,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$UCvoykBhssFN8Pv4cfeovv$AbAbmcIU4j2wiIcHoX3END7B0/W+N5/6JXfzyD3kqck=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "yeasin5",
+    "first_name": "",
+    "last_name": "",
+    "email": "yeasin5@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-12-03T13:29:44.129Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 7,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$jXSJiAABsHgx3dgVFGxn6X$rAiqouxuVkmlwCdZhXZo3K+HzHlvSOWOh/uavdMaHgg=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "yeasin6",
+    "first_name": "",
+    "last_name": "",
+    "email": "yeasin6@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-12-03T13:30:29.402Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 8,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$xqoSiysTPSuWTuKMqFZDDW$leO3US+VL0D17ftOXr9hoW/bI7a4U+8eQWj9caYjm50=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "yeasin7",
+    "first_name": "",
+    "last_name": "",
+    "email": "yeasin77@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-12-03T13:30:55.827Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "authtoken.token",
+  "pk": "1efd09e9e47b03fdd1af24a9856c37d2c752a844",
+  "fields": {
+    "user": 6,
+    "created": "2025-12-03T13:29:44.346Z"
+  }
+},
+{
+  "model": "authtoken.token",
+  "pk": "6275559f75c9987957d8eaaec8b75b82561f84d5",
+  "fields": {
+    "user": 1,
+    "created": "2025-12-01T09:00:02.120Z"
+  }
+},
+{
+  "model": "authtoken.token",
+  "pk": "692dc9f3b9b65ebcff6d055c0b1d9a1d56eb1160",
+  "fields": {
+    "user": 2,
+    "created": "2025-12-01T08:44:59.715Z"
+  }
+},
+{
+  "model": "watchlist_app.streamplatform",
+  "pk": 1,
+  "fields": {
+    "name": "Netflix",
+    "about": "Netflix",
+    "website": "http://www.Netflix.com"
+  }
+},
+{
+  "model": "watchlist_app.streamplatform",
+  "pk": 2,
+  "fields": {
+    "name": "Steam",
+    "about": "Steam",
+    "website": "http://www.Steam.com"
+  }
+},
+{
+  "model": "watchlist_app.streamplatform",
+  "pk": 4,
+  "fields": {
+    "name": "Netflix",
+    "about": "About Netflix",
+    "website": "https://www.example.com/netflix"
+  }
+},
+{
+  "model": "watchlist_app.streamplatform",
+  "pk": 5,
+  "fields": {
+    "name": "Amazon Prime",
+    "about": "About Amazon Prime",
+    "website": "https://www.example.com/amazon prime"
+  }
+},
+{
+  "model": "watchlist_app.streamplatform",
+  "pk": 6,
+  "fields": {
+    "name": "Disney+",
+    "about": "About Disney+",
+    "website": "https://www.example.com/disney+"
+  }
+},
+{
+  "model": "watchlist_app.watchlist",
+  "pk": 1,
+  "fields": {
+    "title": "Dispatch",
+    "storyline": "Dispatch",
+    "platform": 1,
+    "active": true,
+    "created": "2025-11-30T06:05:16.908Z",
+    "avg_rating": 0.0,
+    "num_rating": 0
+  }
+},
+{
+  "model": "watchlist_app.watchlist",
+  "pk": 2,
+  "fields": {
+    "title": "age of empire 4",
+    "storyline": "Good RTS game.",
+    "platform": 2,
+    "active": true,
+    "created": "2025-12-01T05:37:25.817Z",
+    "avg_rating": 0.0,
+    "num_rating": 0
+  }
+},
+{
+  "model": "watchlist_app.watchlist",
+  "pk": 3,
+  "fields": {
+    "title": "Batman",
+    "storyline": "Batman",
+    "platform": 1,
+    "active": true,
+    "created": "2025-12-01T05:39:45.075Z",
+    "avg_rating": 4.5,
+    "num_rating": 2
+  }
+},
+{
+  "model": "watchlist_app.review",
+  "pk": 1,
+  "fields": {
+    "review_user": 1,
+    "rating": 4,
+    "description": "Too good",
+    "watchlist": 1,
+    "active": false,
+    "created": "2025-11-30T06:13:14.114Z",
+    "update": "2025-11-30T06:13:14.114Z"
+  }
+},
+{
+  "model": "watchlist_app.review",
+  "pk": 2,
+  "fields": {
+    "review_user": 2,
+    "rating": 1,
+    "description": "End of shift",
+    "watchlist": 1,
+    "active": false,
+    "created": "2025-11-30T11:04:07.106Z",
+    "update": "2025-11-30T11:04:07.106Z"
+  }
+},
+{
+  "model": "watchlist_app.review",
+  "pk": 3,
+  "fields": {
+    "review_user": 2,
+    "rating": 4,
+    "description": "Love it",
+    "watchlist": 2,
+    "active": true,
+    "created": "2025-12-01T05:37:44.206Z",
+    "update": "2025-12-01T05:37:44.206Z"
+  }
+},
+{
+  "model": "watchlist_app.review",
+  "pk": 5,
+  "fields": {
+    "review_user": 1,
+    "rating": 5,
+    "description": "Im batman",
+    "watchlist": 3,
+    "active": false,
+    "created": "2025-12-01T05:46:21.324Z",
+    "update": "2025-12-01T05:46:21.324Z"
+  }
+},
+{
+  "model": "watchlist_app.review",
+  "pk": 6,
+  "fields": {
+    "review_user": 2,
+    "rating": 4,
+    "description": "Nah Im Batman 2",
+    "watchlist": 3,
+    "active": false,
+    "created": "2025-12-01T05:47:23.420Z",
+    "update": "2025-12-01T08:45:12.320Z"
+  }
+}
+]

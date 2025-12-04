@@ -14,4 +14,5 @@ refresh-db:
 	$(MANAGE) loaddata mock_data
 
 save-db:
+	mkdir -p fixtures
 	$(MANAGE) dumpdata --exclude contenttypes --exclude sessions --indent 2 > fixtures/mock_data.json
